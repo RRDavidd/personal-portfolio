@@ -4,18 +4,17 @@ import Instagram from "../svgs/Instagram";
 import Link from "next/link";
 import Navbar from "./Navbar";
 
-export default function Lefsticky() {
+export default function Leftsticky() {
   return (
-    <div className="flex-shrink-0 top-0 md:sticky max-h-screen w-1/2 py-24 flex flex-col justify-between">
+    <div className="top-0 flex flex-col justify-between flex-shrink-0 w-1/2 max-h-screen py-24 md:sticky">
       <div>
         <div className="mb-20">
           <h1 className="font-bold mb-2 hover:scale-110 hover:cursor-pointer duration-500 hover:drop-shadow-[0_0px_120px_rgba(0,255,0,.8)] transition-all">
             Raphael David
           </h1>
-          <p className="font-normal mb-4">Web Developer</p>
+          <p className="mb-4 font-normal">Web Developer</p>
           <p
-            className="font-light text-secondary max-w-md
-          "
+            className="max-w-md font-light text-secondary "
           >
             I enjoy programming and music!
           </p>
@@ -28,7 +27,7 @@ export default function Lefsticky() {
             <Github
               width={30}
               height={30}
-              className="fill-secondary hover:fill-white hover:scale-110 transition-all duration-300"
+              className="transition-all duration-300 fill-secondary hover:fill-white hover:scale-110"
             />
           </a>
         </figure>
@@ -37,7 +36,7 @@ export default function Lefsticky() {
             <Instagram
               width={30}
               height={30}
-              className="fill-secondary hover:fill-white hover:scale-110 transition-all duration-300"
+              className="transition-all duration-300 fill-secondary hover:fill-white hover:scale-110"
             />
           </a>
         </figure>
@@ -49,7 +48,7 @@ export default function Lefsticky() {
             <Linkedin
               width={30}
               height={30}
-              className="fill-secondary hover:fill-white hover:scale-110 transition-all duration-300"
+              className="transition-all duration-300 fill-secondary hover:fill-white hover:scale-110"
             />
           </a>
         </figure>
