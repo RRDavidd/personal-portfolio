@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Rightcontent() {
   return (
@@ -62,6 +63,79 @@ export default function Rightcontent() {
       </section>
 
       <section
+        id="projects"
+        className="mb-20 hover:drop-shadow-[0_0px_200px_rgba(0,255,0,.3)] transition-all"
+      >
+        <h2 className="mb-4 text-4xl font-medium">Projects</h2>
+        <Link
+          href="https://size-match.vercel.app/"
+          target="_blank"
+          className="flex gap-10 p-3 mb-2 transition-all duration-300 rounded group hover:bg-slate-400 hover:bg-opacity-10 hover:ring-2 hover:ring-green-700">
+          <div className="relative flex-shrink-0 w-1/4 text-xs text-secondary">
+            <Image
+              alt="sizematch"
+              src="/sizematch.png"
+              fill={true}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover duration-300 rounded-sm ring-white ring-1 group-hover:ring-lime-200"
+            />
+          </div>
+          <div className="transition-all duration-300">
+            <p className="duration-300 group-hover:text-lime-300">
+              SizeMatch (On-going)
+            </p>
+            <p className="text-secondary">
+              A web application that helps users compare sizes of clothing from different brands to their own size to scale. Built with React, Redux, and Tailwind.
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="https://prenatalratings.com/"
+          target="_blank"
+          className="flex gap-10 p-3 mb-2 transition-all duration-300 rounded group hover:bg-slate-400 hover:bg-opacity-10 hover:ring-2 hover:ring-green-700">
+          <div className="relative flex-shrink-0 w-1/4 text-xs text-secondary">
+            <Image
+              alt="prenatal-ratings"
+              src="/prenatal.png"
+              fill={true}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover duration-300 rounded-sm ring-white ring-1 group-hover:ring-lime-200"
+            />
+          </div>
+          <div className="transition-all duration-300">
+            <p className="duration-300 group-hover:text-lime-300">
+              Prenatal Ratings
+            </p>
+            <p className="text-secondary">
+              Freelanced project for a client. Built with Shopify, created a custom theme and custom app for the client.
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="https://jellicate.com.au/"
+          target="_blank"
+          className="flex gap-10 p-3 mb-2 transition-all duration-300 rounded group hover:bg-slate-400 hover:bg-opacity-10 hover:ring-2 hover:ring-green-700">
+          <div className="relative flex-shrink-0 w-1/4 text-xs text-secondary">
+            <Image
+              alt="jellicate"
+              src="/jellicate-text.png"
+              fill={true}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover duration-300 rounded-sm ring-white ring-1 group-hover:ring-lime-200"
+            />
+          </div>
+          <div className="transition-all duration-300">
+            <p className="duration-300 group-hover:text-lime-300">
+              Jellicate Nailz
+            </p>
+            <p className="text-secondary">
+              PHP/WooCommerce written website for a sole trader. Design was not created by me, but I did the development.
+            </p>
+          </div>
+        </Link>
+      </section>
+
+      <section
         id="education"
         className="mb-20 hover:drop-shadow-[0_0px_120px_rgba(0,255,0,.8)] transition-all"
       >
@@ -117,89 +191,6 @@ export default function Rightcontent() {
           <div className="transition-all duration-300">
             <p className="duration-300 group-hover:text-lime-300">Elementary</p>
             <p className="text-secondary">Westfields International School</p>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="projects"
-        className="mb-20 hover:drop-shadow-[0_0px_200px_rgba(0,255,0,.3)] transition-all"
-      >
-        <h2 className="mb-4 text-4xl font-medium">Projects</h2>
-        <div className="flex gap-10 p-3 mb-2 transition-all duration-300 rounded group hover:bg-slate-400 hover:bg-opacity-10 hover:ring-2 hover:ring-green-700">
-          <div className="relative flex-shrink-0 w-1/4 text-xs text-secondary">
-            <Image
-              alt="poopoo"
-              src="/20221127_0001.png"
-              fill={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover duration-300 rounded-sm ring-white ring-1 group-hover:ring-lime-200"
-            />
-          </div>
-          <div className="transition-all duration-300">
-            <p className="duration-300 group-hover:text-lime-300">
-              Bachelor of Information Technology Major in Computer Science
-            </p>
-            <p className="text-secondary">
-              Queensland University of Technology
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-10 p-3 mb-2 transition-all duration-300 rounded group hover:bg-slate-400 hover:bg-opacity-10 hover:ring-2 hover:ring-green-700">
-          <div className="relative flex-shrink-0 w-1/4 text-xs text-secondary">
-            <Image
-              alt="poopoo"
-              src="/20221127_0001.png"
-              fill={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover duration-300 rounded-sm ring-white ring-1 group-hover:ring-lime-200"
-            />
-          </div>
-          <div className="transition-all duration-300">
-            <p className="duration-300 group-hover:text-lime-300">
-              Bachelor of Information Technology Major in Computer Science
-            </p>
-            <p className="text-secondary">
-              Queensland University of Technology
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-10 p-3 mb-2 transition-all duration-300 rounded group hover:bg-slate-400 hover:bg-opacity-10 hover:ring-2 hover:ring-green-700">
-          <div className="relative flex-shrink-0 w-1/4 text-xs text-secondary">
-            <Image
-              alt="poopoo"
-              src="/20221127_0001.png"
-              fill={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover duration-300 rounded-sm ring-white ring-1 group-hover:ring-lime-200"
-            />
-          </div>
-          <div className="transition-all duration-300">
-            <p className="duration-300 group-hover:text-lime-300">
-              Bachelor of Information Technology Major in Computer Science
-            </p>
-            <p className="text-secondary">
-              Queensland University of Technology
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-10 p-3 mb-2 transition-all duration-300 rounded group hover:bg-slate-400 hover:bg-opacity-10 hover:ring-2 hover:ring-green-700">
-          <div className="relative flex-shrink-0 w-1/4 text-xs text-secondary">
-            <Image
-              alt="poopoo"
-              src="/20221127_0001.png"
-              fill={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover duration-300 rounded-sm ring-white ring-1 group-hover:ring-lime-200"
-            />
-          </div>
-          <div className="transition-all duration-300">
-            <p className="duration-300 group-hover:text-lime-300">
-              Bachelor of Information Technology Major in Computer Science
-            </p>
-            <p className="text-secondary">
-              Queensland University of Technology
-            </p>
           </div>
         </div>
       </section>

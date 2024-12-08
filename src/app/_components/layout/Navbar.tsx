@@ -5,31 +5,31 @@ export default function Navbar() {
   return (
     <nav>
       <ul>
-        <li className="group w-full md:w-1/2 mb-4">
+        <li className="w-full mb-4 group md:w-1/2">
           <Link
-            className="group-hover:text-lime-300 transition-all duration-300 flex items-center"
+            className="flex items-center transition-all duration-300 group-hover:text-lime-300"
             href="/#experience"
           >
-            <hr className="w-8 inline-block mr-3 border-secondary group-hover:w-20 group-hover:border-emerald-600 transition-all duration-300" />
+            <hr className="inline-block w-8 mr-3 transition-all duration-300 border-secondary group-hover:w-20 group-hover:border-emerald-600" />
             <p className="inline-block">Experience</p>
           </Link>
         </li>
-        <li className="group w-full md:w-1/2 mb-4">
+        <li className="w-full mb-4 group md:w-1/2">
           <Link
-            className="group-hover:text-lime-300 transition-all duration-300 flex items-center"
-            href="/#education"
-          >
-            <hr className="w-8 inline-block mr-3 border-secondary group-hover:w-20 group-hover:border-emerald-600 transition-all duration-300" />
-            <p className="inline-block">Education</p>
-          </Link>
-        </li>
-        <li className="group w-full md:w-1/2 mb-4">
-          <Link
-            className="group-hover:text-lime-300 transition-all duration-300 flex items-center"
+            className="flex items-center transition-all duration-300 group-hover:text-lime-300"
             href="/#projects"
           >
-            <hr className="w-8 inline-block mr-3 border-secondary group-hover:w-20 group-hover:border-emerald-600 transition-all duration-300" />
+            <hr className="inline-block w-8 mr-3 transition-all duration-300 border-secondary group-hover:w-20 group-hover:border-emerald-600" />
             <p className="inline-block">Projects</p>
+          </Link>
+        </li>
+        <li className="w-full mb-4 group md:w-1/2">
+          <Link
+            className="flex items-center transition-all duration-300 group-hover:text-lime-300"
+            href="/#education"
+          >
+            <hr className="inline-block w-8 mr-3 transition-all duration-300 border-secondary group-hover:w-20 group-hover:border-emerald-600" />
+            <p className="inline-block">Education</p>
           </Link>
         </li>
       </ul>
